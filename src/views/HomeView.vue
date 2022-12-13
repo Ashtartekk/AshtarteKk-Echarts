@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    123
   </div>
 </template>
 
@@ -9,3 +10,7 @@ export default {
   name: 'HomeView'
 }
 </script>
+
+<style lang="scss">
+
+</style>
