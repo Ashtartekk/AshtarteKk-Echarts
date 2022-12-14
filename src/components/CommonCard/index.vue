@@ -2,9 +2,13 @@
     <div class="common-card">
         <div class="title">{{ title }}</div>
         <div class="value">{{ value }}</div>
-        <div class="chart">3</div>
+        <div class="chart">
+            <slot></slot>
+        </div>
         <div class="line"></div>
-        <div class="total">5</div>
+        <div class="total">
+            <slot name="footer"></slot>
+        </div>
     </div>
 </template>
 
@@ -33,7 +37,6 @@ export default {
 
 .chart {
     height: 50px;
-    background-color: #ccc;
 }
 
 .line {
@@ -44,5 +47,14 @@ export default {
 .total {
     font-size: 12px;
     color: #666
+}
+</style>
+
+//只要不放在scoped里下面的就变成一个组件全局样式
+<style lang="scss">
+.emphasis {
+    margin-left: 5px;
+    color: #333;
+    font-weight: 700;
 }
 </style>
