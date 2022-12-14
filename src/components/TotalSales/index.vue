@@ -1,5 +1,5 @@
 <template>
-    <CommonCard></CommonCard>
+    <CommonCard title="累计销售额" value="￥ 32,039,165"></CommonCard>
 </template>
 
 <script>
