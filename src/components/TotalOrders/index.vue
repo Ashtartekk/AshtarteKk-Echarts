@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #total-orders-chart {
     width: 100%;
     height: 100%;
